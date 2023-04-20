@@ -1,0 +1,1 @@
+![stack-of-people](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzg3ZjAxOTNhZTFiN2M1YTJlMjRjMWU2MTZlZGNhYWJkZmQzMTU1NiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/5eoaCkjaXXFW6pzhKz/giphy.gif)

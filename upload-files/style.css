@@ -1,0 +1,137 @@
+body {
+  background-color: rgb(44, 103, 179);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.upload-container {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.upload-container > .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.upload-container .description {
+  color: #888;
+}
+
+.upload-container .drag-drop {
+  border: dashed 3px gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 60px 30px;
+  margin: 20px 0;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #888;
+  gap: 10px;
+}
+
+.upload-container .drag-drop .btn {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4d86f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.upload-container .drag-drop .btn:hover {
+  background-color: #3c6dc0;
+}
+
+.upload-container .title-section {
+  text-align: left;
+  color: #888;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.upload-container .uploaded-files {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-container .uploaded-files .file {
+  border: solid 1px rgb(139, 142, 141);
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3 ease-in-out;
+}
+
+.upload-container .uploaded-files .file:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-container .uploaded-files .file .icon {
+  width: 48px;
+  padding-right: 20px;
+}
+
+.upload-container .uploaded-files .file .icon img {
+  width: 68px;
+  height: 48px;
+}
+
+.upload-container .uploaded-files .file .title {
+  flex: 1;
+}
+
+.upload-container .uploaded-files .file .title .name {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.upload-container .uploaded-files .file .title .size {
+  color: #888;
+  font-size: 14px;
+}
+
+.upload-container .uploaded-files .file .title .progress {
+  height: 5px;
+  width: 100%;
+  background-color: #888;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.upload-container .uploaded-files .file .title .progress .progress-60 {
+  background-color: #4d86f0;
+  height: 5px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.upload-container .uploaded-files .file .actions button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-container .uploaded-files .file .actions button:hover {
+  background-color: #ccc;
+}

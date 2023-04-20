@@ -1,0 +1,71 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #eee;
+}
+
+.people-container {
+  margin: 100px auto;
+  width: 500px;
+  display: flex;
+}
+
+.people-container .people {
+  position: relative;
+  margin-right: -20px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.people-container .people img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.people-container .people:hover img {
+  transform: translateY(-2px);
+}
+
+.people-container .people .name {
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  min-width: 100px;
+  width: 150px;
+  top: -55px;
+  left: calc((100% +10px) * -1);
+  padding: 10px 15px;
+}
+
+.people-container .people .name .text {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.people-container .people .name::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 40%;
+  bottom: -20px;
+  border-top: solid 10px black;
+  border-right: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  border-left: solid 10px transparent;
+}
+
+.people-container .people:hover .name {
+  display: inline-block;
+}
